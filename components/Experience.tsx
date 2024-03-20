@@ -27,7 +27,7 @@ import {
 import { SparklesIcon } from '@heroicons/react/24/solid';
 import resumeData from '@/contants/jobData';
 type BreakpointOrNull = Breakpoint | null;
-function useWidth() {
+function UseWidth() {
   const theme: Theme = useTheme();
   const keys: readonly Breakpoint[] = [...theme.breakpoints.keys].reverse();
   return (
@@ -38,8 +38,8 @@ function useWidth() {
     }, null) || 'xs'
   );
 }
-function checkIsMobileDevice() {
-  const screenSize = useWidth();
+function CheckIsMobileDevice() {
+  const screenSize = UseWidth();
 
   if (screenSize === 'xs' || screenSize == 'sm') {
     return true;
@@ -50,7 +50,7 @@ function checkIsMobileDevice() {
 
 export default function Experience() {
   const [value, setValue] = React.useState('1');
-  const isAMobileDevice = checkIsMobileDevice();
+  const isAMobileDevice = CheckIsMobileDevice();
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
@@ -84,7 +84,7 @@ export default function Experience() {
         className="mb-4"
       >
         <p className="max-w-prose text-base/relaxed font-extralight text-center">
-          I've had the privilege of contributing to esteemed organizations
+          I&apos;ve had the privilege of contributing to esteemed organizations
           throughout my career. Explore my professional journey to gain insights
           into my diverse experiences and contributions.
         </p>
@@ -123,6 +123,7 @@ export default function Experience() {
                     sx={{
                       color: '#fff',
                     }}
+                    key={index}
                   />
                 );
               })}
@@ -130,7 +131,7 @@ export default function Experience() {
           </Box>
           {resumeData.map((job, index) => {
             return (
-              <div className="flex flex-row ">
+              <div className="flex flex-row " key={index}>
                 <TabPanel
                   value={(index + 1).toString()}
                   key={(index + 1).toString()}
@@ -149,7 +150,7 @@ export default function Experience() {
                       <ul className="mt-2 flex flex-wrap">
                         {job.expData.skills.map((skill, index) => {
                           return (
-                            <li className="mr-1.5 mt-2">
+                            <li className="mr-1.5 mt-2" key={index}>
                               <div className="flex items-center rounded-full bg-purple-400/20 text-purple-300 px-3 py-1 text-xs font-medium leading-5 text-white">
                                 {skill}
                               </div>

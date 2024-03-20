@@ -61,8 +61,8 @@ const About = () => {
             </motion.div>
             <p className="max-w-fit text-base/relaxed text-neutrals-300 mb-4">
               Pleasure to meet you. My name is Delano and I enjoy creating
-              something out of nothing. I'm always in the pursuit of learning
-              new skills to take on new and interesting challenges.
+              something out of nothing. I&apos;m always in the pursuit of
+              learning new skills to take on new and interesting challenges.
             </p>
             <p className="max-w-fit text-base/relaxed text-neutrals-300 mb-4">
               I have always been fascinated in creativity and how individuals

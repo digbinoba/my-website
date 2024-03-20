@@ -73,8 +73,8 @@ const Skills2 = () => {
         </h3>
 
         <div className="mt-16 flex flex-wrap gap-12 mx-auto justify-center">
-          {skills.map((skill) => (
-            <div className="flex flex-col">
+          {skills.map((skill, index) => (
+            <div className="flex flex-col" key={index}>
               <div
                 className="block-container w-20 h-20 mx-auto"
                 key={skill.name}

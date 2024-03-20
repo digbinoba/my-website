@@ -21,7 +21,7 @@ const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-white w-auto h-auto"
         >
           <h1 className="text-balance text-3xl/tight font-bold  md:text-5xl/tight text-center">
-            Hello, I'm
+            Hello, I&apos;m
           </h1>
           <h1 className="text-balance text-5xl/tight font-bold  md:text-7xl/tight text-center">
             Delano Igbinoba
@@ -32,7 +32,7 @@ const HeroContent = () => {
           >
             I&apos;m a dedicated Full-Stack Developer with a passion for
             architecting robust solutions and bringing a flair for captiviating
-            designs and interactive prototypes. Let's craft the future of
+            designs and interactive prototypes. Let&apos;s craft the future of
             technology, one line at a time!
           </motion.p>
           <motion.div className="flex flex-row justify-center gap-5">
